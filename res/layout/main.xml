@@ -8,7 +8,7 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Number of seconds"
+        android:hint="@string/seconds_wait"
         android:inputType="numberDecimal" >
     </EditText>
 
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startAlert"
-        android:text="Start Counter" >
+        android:text="@string/counter" >
     </Button>
 
 </LinearLayout> 

@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">SoundVibrateToast</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="seconds_wait">Number of Seconds</string>
+    <string name="counter">Start Counter</string>
     <string name="action_settings">Settings</string>
 
 </resources>
