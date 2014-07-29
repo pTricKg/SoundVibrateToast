@@ -19,7 +19,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     vibrator.vibrate(2000);
     
-    // Play something for tablet
+    // Play something for tablet, doesn't vibrate when asked to
     MediaPlayer mPlayer = MediaPlayer.create(context, R.raw.braincells);
     mPlayer.start();
   }
