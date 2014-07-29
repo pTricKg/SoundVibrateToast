@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
+  // onRecieve startAlert from AlarmActivity
   public void onReceive(Context context, Intent intent) {
     Toast.makeText(context, "Irradiation of brain cells commence!.",
         Toast.LENGTH_LONG).show();
