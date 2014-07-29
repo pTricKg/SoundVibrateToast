@@ -15,10 +15,31 @@ public class AlarmActivity extends Activity {
   
 /** Called when the activity is first created. */
 
+    //Initialize variable for video view
+	//VideoView displays while MediaController plays
+	VideoView vView = null;
+	MediaController vCont = null;
+
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
+	
+	//find vView
+		vView = (VideoView) findViewById(R.id.videoView);
+		//create controller
+		vCont = new MediaController(this);
+		//set controller to play video view
+		vView.setMediaController(vCont);
+		//set path to video form res/raw
+		Uri video= Uri.parse("android.resource://com.pTricKg.soundVibarateToast/" + R.raw.data_asks_spock);
+		//set path to video from sdcard
+		//vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4"); 
+		// setting parsed video 
+		vView.setVideoURI(video);
+		vView.requestFocus();
+		vCont.show();
+		vView.start();
   }
 
   public void startAlert(View view) {
