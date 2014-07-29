@@ -15,6 +15,8 @@ public class AlarmActivity extends Activity {
   
 /** Called when the activity is first created. */
 
+/** Video code has not been tested but works elsewhere
+
     //Initialize variable for video view
 	//VideoView displays while MediaController plays
 	VideoView vView = null;
