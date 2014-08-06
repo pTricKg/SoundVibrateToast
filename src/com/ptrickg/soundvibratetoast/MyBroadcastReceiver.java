@@ -1,6 +1,5 @@
 package com.ptrickg.soundvibratetoast;
 
-import com.ptrickg.soundvibratetoast.R;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

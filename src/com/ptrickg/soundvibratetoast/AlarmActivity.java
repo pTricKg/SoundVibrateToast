@@ -1,19 +1,18 @@
 package com.ptrickg.soundvibratetoast;
 
-import com.ptrickg.soundvibratetoast.R;
-
-import android.app.Activity;
+ android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.MediaController;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 public class AlarmActivity extends Activity {
-  
-/** Called when the activity is first created. */
 
 /** Video code has not been tested but works elsewhere */
 
