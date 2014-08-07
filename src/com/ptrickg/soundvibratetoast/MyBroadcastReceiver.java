@@ -8,6 +8,8 @@ import android.media.MediaPlayer;
 import android.os.Vibrator;
 import android.widget.Toast;
 
+/** the meat and potatoes */
+
 public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
   // onRecieve from method startAlert from AlarmActivity
