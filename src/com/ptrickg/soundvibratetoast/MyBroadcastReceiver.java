@@ -1,6 +1,5 @@
 package com.ptrickg.soundvibratetoast;
 
-import com.ptrickg.soundvibratetoast.R;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,8 +8,11 @@ import android.media.MediaPlayer;
 import android.os.Vibrator;
 import android.widget.Toast;
 
+/** the meat and potatoes */
+
 public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
+  // onRecieve from method startAlert from AlarmActivity
   public void onReceive(Context context, Intent intent) {
     Toast.makeText(context, "Irradiation of brain cells commence!.",
         Toast.LENGTH_LONG).show();
@@ -18,7 +20,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     vibrator.vibrate(2000);
     
-    // Play something for tablet
+    // Play something for tablet, doesn't vibrate when asked to
     MediaPlayer mPlayer = MediaPlayer.create(context, R.raw.braincells);
     mPlayer.start();
   }
