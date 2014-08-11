@@ -35,7 +35,7 @@ public class AlarmActivity extends Activity {
 		//set path to video form res/raw
 		Uri video= Uri.parse("android.resource://com.pTricKg.soundVibarateToast/" + R.raw.data_asks_spock);
 		//set path to video from sdcard
-		vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4"); 
+		vView.setVideoPath("android.resource://com.pTricKg.soundVibrateToast/" + R.raw.data_asks_spock); 
 		// setting parsed video 
 		vView.setVideoURI(video);
 		vView.requestFocus();
