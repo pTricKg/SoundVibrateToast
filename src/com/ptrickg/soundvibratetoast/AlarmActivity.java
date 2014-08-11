@@ -1,6 +1,6 @@
 package com.ptrickg.soundvibratetoast;
 
- android.app.Activity;
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -18,8 +18,8 @@ public class AlarmActivity extends Activity {
 
     //Initialize variable for video view
 	//VideoView displays while MediaController plays
-	VideoView vView = null;
-	MediaController vCont = null;
+	VideoView vView;
+	MediaController vCont;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class AlarmActivity extends Activity {
 		//set path to video form res/raw
 		Uri video= Uri.parse("android.resource://com.pTricKg.soundVibarateToast/" + R.raw.data_asks_spock);
 		//set path to video from sdcard
-		//vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4"); 
+		vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4"); 
 		// setting parsed video 
 		vView.setVideoURI(video);
 		vView.requestFocus();
