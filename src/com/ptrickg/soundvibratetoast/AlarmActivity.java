@@ -14,7 +14,9 @@ import android.widget.VideoView;
 
 public class AlarmActivity extends Activity {
 
-/** Video code has not been tested but works elsewhere */
+/** Video code has not been tested but works elsewhere
+ * eeh
+ */
 
     //Initialize variable for video view
 	//VideoView displays while MediaController plays
