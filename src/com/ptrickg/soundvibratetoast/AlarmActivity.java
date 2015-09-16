@@ -1,46 +1,24 @@
 package com.ptrickg.soundvibratetoast;
 
- android.app.Activity;
+import com.ptrickg.soundvibratetoast.R;
+
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.MediaController;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 public class AlarmActivity extends Activity {
-
-/** Video code has not been tested but works elsewhere */
-
-    //Initialize variable for video view
-	//VideoView displays while MediaController plays
-	VideoView vView = null;
-	MediaController vCont = null;
+  
+/** Called when the activity is first created. */
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
-	
-	//find vView
-		vView = (VideoView) findViewById(R.id.videoView);
-		//create controller
-		vCont = new MediaController(this);
-		//set controller to play video view
-		vView.setMediaController(vCont);
-		//set path to video form res/raw
-		Uri video= Uri.parse("android.resource://com.pTricKg.soundVibarateToast/" + R.raw.data_asks_spock);
-		//set path to video from sdcard
-		//vView.setVideoPath("mnt/sdcard/Movies/data_asks_spock.mp4"); 
-		// setting parsed video 
-		vView.setVideoURI(video);
-		vView.requestFocus();
-		vCont.show();
-		vView.start();
   }
 
   public void startAlert(View view) {
