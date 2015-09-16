@@ -9,6 +9,13 @@ import android.media.MediaPlayer;
 import android.os.Vibrator;
 import android.widget.Toast;
 
+<<<<<<< HEAD
+=======
+/** the meat and potatoes
+ *  oh
+ */
+
+>>>>>>> 2a91c9836768df1d02da7a398cc0dcc8dede5956
 public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
   public void onReceive(Context context, Intent intent) {
